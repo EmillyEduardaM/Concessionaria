@@ -3,7 +3,7 @@
 Class Automovel{
     public function addAutomovel($Preco,$Modelo){
         try{
-            $sql = "INSERT INTO automovel (Preco$Preco, Modeloo$Modelo) VALUES (?, ?)";
+            $sql = "INSERT INTO automovel (Preco$Preco, Modelo$Modelo) VALUES (?, ?)";
             $stmt = Conexao::getConexao()->prepare($sql);
             $stmt->bindValue(1, $Preco);
             $stmt->bindValue(2, $Modelo);
