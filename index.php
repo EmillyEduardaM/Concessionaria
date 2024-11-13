@@ -9,7 +9,7 @@ include 'alocacao.class.php';
 var_dump(Conexao::getConexao());
 $c = new Concessionaria();
 $u = new Automovel();
-$o = new Alocacao();
+$l = new Alocacao();
 
 echo $c->addConcessionaria('Demétir concessionária');
 var_dump($c->recebeConcessionaria('Demétir concessionária'));
