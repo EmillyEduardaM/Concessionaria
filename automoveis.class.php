@@ -36,7 +36,7 @@ Class Automovel{
             }
             print("Automóvel não cadastrado!");
             return false;
-        } catch (Exception $ex) {
+        } catch (PDOException $ex) {
             print("Erro ao buscar automóvel! " . $ex->getMessage());
 
             return false;
@@ -56,7 +56,7 @@ Class Automovel{
                 return "Nenhuma automóvel excluído";
             }
         }
-        catch(Exception $e){
+        catch(PDOException $e){
            return "Erro ao remover automóvel: ".$e->getMessage();
         }
     }
@@ -75,7 +75,7 @@ Class Automovel{
                 return "Nenhum automóvel atualizado!";
             }
         }
-        catch(Exception $e){
+        catch(PDOException $e){
            return "Erro ao atualizar automóvel!".$e->getMessage();
         }
     }

@@ -35,7 +35,7 @@ Class Concessionaria{
             }
             print("Concessionária não cadastrada!");
             return false;
-        } catch (Exception $ex) {
+        } catch (PDOException $ex) {
             print("Erro ao buscar concessionária! " . $ex->getMessage());
 
             return false;
@@ -55,7 +55,7 @@ Class Concessionaria{
                 return "Nenhuma concessionária deletada!";
             }
         }
-        catch(Exception $e){
+        catch(PDOException $e){
            return "Erro ao deletar concessionária! ".$e->getMessage();
         }
     }
