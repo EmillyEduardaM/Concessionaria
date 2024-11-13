@@ -1,6 +1,6 @@
 <?php
 
-Class Alocação{
+Class Alocacao{
     public function addAlocacao($Quantidade, $Id_Veiculo, $Id_Concessionaria, $Id_Cliente){
         try{
             $sql = "INSERT INTO alocacao (quantidade, Id_Veiculo, Id_Concessionaria, Id_Cliente) VALUES (?, ?, ?, ?)";
