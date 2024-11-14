@@ -1,15 +1,16 @@
 <?php
 
-include 'conexao.php';
-include 'concessionaria.class.php';
-include 'automoveis.class.php';
-include 'alocacao.class.php';
+include 'C:\xampp\htdocs\Concessionaria\model\conexao.php';
+include 'C:\xampp\htdocs\Concessionaria\model\concessionaria.class.php';
+include 'model/automoveis.class.php';
+include 'model/alocacao.class.php';
 
 
 var_dump(Conexao::getConexao());
 $c = new Concessionaria();
 $u = new Automovel();
 $l = new Alocacao();
+
 
 echo $c->addConcessionaria('Demétir concessionária');
 var_dump($c->recebeConcessionaria('Demétir concessionária'));
